@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 *.log
 resume.db
+/DEMO_SCRIPT.md
+/PRESENTATION_SCRIPT.txt
