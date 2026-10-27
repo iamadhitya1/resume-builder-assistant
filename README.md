@@ -20,11 +20,50 @@ It builds and scores resumes, recommends roles, answers career questions in chat
 
 70+ is placement-ready, 50-69 almost there, below 50 needs support.
 
-## Run it
+## Download and run it again (step by step)
+
+You need **Python 3.10 or newer** (built on Python 3.14) and **git** (or just a browser to download a ZIP).
+
+**1. Get the code** (pick one)
+
+- With git (PowerShell, Command Prompt or any terminal):
+  ```bash
+  git clone https://github.com/iamadhitya1/resume-builder-assistant.git
+  cd resume-builder-assistant
+  ```
+- Without git: open the repo page, click the green **Code** button, then **Download ZIP**, unzip it, and open a terminal inside the unzipped folder.
+
+**2. Install the packages** (a virtual environment keeps your other Python projects clean)
+
+- Windows PowerShell:
+  ```powershell
+  python -m venv .venv
+  .venv\Scripts\Activate.ps1
+  pip install -r requirements.txt
+  ```
+- macOS / Linux:
+  ```bash
+  python3 -m venv .venv
+  source .venv/bin/activate
+  pip install -r requirements.txt
+  ```
+
+**3. Start the app**
 ```bash
-pip install -r requirements.txt
-streamlit run app.py
+python -m streamlit run app.py
 ```
+Open http://localhost:8501 and wait about 10 seconds on the first load. Press `Ctrl+C` in the terminal to stop it.
+
+**4. Try the demo**
+- Open the **ATS Analyzer** tab, choose the role **Data Analyst**, and upload `samples/Rohan_Verma_WEAK_resume.pdf` (about 35/100).
+- Click **Edit this resume in the builder**, fix it in the **Build Resume** tab, then **Download PDF**.
+- Upload `samples/Rohan_Verma_IMPROVED_resume.pdf` to see about 96/100.
+- The full talk track and likely judge questions are in `docs/PRESENTATION_SCRIPT.txt`.
+
+**Optional AI chat:** install [Ollama](https://ollama.com), pull a model (for example `ollama pull llama3`), then switch on "Use Ollama LLM in chat" in the sidebar. Everything else works without it.
+
+**Next time you open it:** activate the environment again (step 2, the activate line only) and run step 3.
+
 The SQLite database (`resume.db`: tables `students`, `jobs`, `resumes`) is created automatically on first run from `data_gen.py`.
 To regenerate or change the sample data, edit `data_gen.py` (or `ROLES` in `core.py`), run `python data_gen.py`, and restart the app.
 
@@ -45,3 +84,6 @@ Python, Streamlit, Pandas, SQLite, ChromaDB, scikit-learn, pypdf, fpdf2, Ollama 
 - Scores are a transparent approximation, not a copy of any company's ATS.
 
 Built with AI-assisted coding (Claude Code).
+
+## License
+All rights reserved. The code is public to view and learn from, but may not be copied, reused or redistributed without permission. See [LICENSE](LICENSE).
