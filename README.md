@@ -86,4 +86,4 @@ Python, Streamlit, Pandas, SQLite, ChromaDB, scikit-learn, pypdf, fpdf2, Ollama 
 Built with AI-assisted coding (Claude Code).
 
 ## License
-All rights reserved. The code is public to view and learn from, but may not be copied, reused or redistributed without permission. See [LICENSE](LICENSE).
+All rights reserved by M. Adhitya. Anyone can read the code and run the app as it is, but it may not be copied, modified, redistributed or claimed as someone else's work without permission. The libraries it depends on keep their own licenses (listed in LICENSE). See [LICENSE](LICENSE).

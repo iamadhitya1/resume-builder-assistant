@@ -1,22 +1,35 @@
-Copyright (c) 2026 M. Adithya. All rights reserved.
+Copyright (c) 2026 M. Adhitya. All rights reserved.
 
-Resume Builder Assistant (the "Software") is made publicly visible for viewing,
-learning and evaluation (for example by hackathon judges, recruiters and
-interviewers).
+Resume Builder Assistant (the "Software") is owned by its copyright holder,
+M. Adhitya. The source code is public so that anyone can read it and use it.
 
 You MAY:
 - View and read the source code.
-- Download and run the Software on your own computer for personal learning
-  and evaluation.
+- Download the Software and use (run) it as it is, for personal learning and
+  evaluation (for example hackathon judges, recruiters and interviewers).
 
 You MAY NOT, without the written permission of the copyright holder:
 - Copy, modify, publish or redistribute the Software or substantial parts of it.
-- Use the Software or its code in your own projects, products or services,
-  whether commercial or not.
-- Present the Software as your own work.
+- Use the Software's code in your own projects, products or services.
+- Claim the Software, or any part of it, as your own work.
 
 The Software is provided "as is", without warranty of any kind. The sample
 student data is synthetic and does not describe any real person.
 
-To request permission for any other use, contact the copyright holder through
-the GitHub profile of the repository owner.
+THIRD-PARTY LIBRARIES
+This license covers only the code written for this project (app.py, core.py,
+data_gen.py and the documents in this repository). The libraries the Software
+depends on are NOT part of this repository and are NOT covered by this license.
+They are installed separately (pip install -r requirements.txt) and each keeps
+its own open-source license:
+
+  streamlit      Apache License 2.0
+  pandas         BSD 3-Clause
+  scikit-learn   BSD 3-Clause
+  chromadb       Apache License 2.0
+  ollama         MIT
+  pypdf          BSD 3-Clause
+  fpdf2          LGPL 3.0
+
+To request permission for any other use of this Software, contact the
+copyright holder through the GitHub profile of the repository owner.
