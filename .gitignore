@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.log
+resume.db
+PRESENTATION_SCRIPT.txt
+DEMO_SCRIPT.md
