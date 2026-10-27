@@ -58,7 +58,6 @@ Open http://localhost:8501 and wait about 10 seconds on the first load. Press `C
 - Open the **ATS Analyzer** tab, choose the role **Data Analyst**, and upload `samples/Rohan_Verma_WEAK_resume.pdf` (about 35/100).
 - Click **Edit this resume in the builder**, fix it in the **Build Resume** tab, then **Download PDF**.
 - Upload `samples/Rohan_Verma_IMPROVED_resume.pdf` to see about 96/100.
-- The full talk track and likely judge questions are in `docs/PRESENTATION_SCRIPT.txt`.
 
 **Optional AI chat:** install [Ollama](https://ollama.com), pull a model (for example `ollama pull llama3`), then switch on "Use Ollama LLM in chat" in the sidebar. Everything else works without it.
 
